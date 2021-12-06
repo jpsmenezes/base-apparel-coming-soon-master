@@ -21,7 +21,8 @@ body{
        font-family: 'Josefin Sans', sans-serif;
        font-size: 1.6rem; 
        width: 100%;  
-       background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));                    
+       background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));  
+       height: 150vh;                  
 }
 main{
        max-width: 40rem;
@@ -64,4 +65,42 @@ section p{
        font-size: 1.5rem;
        font-weight: 400;
        line-height: 2.5rem;
+}
+footer form{
+       position: relative;
+       width: 30rem;        
+       padding: 3rem 0;
+       margin: 0 auto;
+}
+footer form input{
+       width: 100%;
+       height: 4rem;
+       border-radius: 3rem;
+       padding: 2rem; 
+       border: 1px solid hsla(0, 36%, 70%, 0.356);      
+}
+footer form input::placeholder{
+       font-family: 'Josefin Sans', sans-serif;
+       color: hsla(0, 36%, 70%, 0.493);
+      
+}
+footer form button{
+       position: absolute;       
+       right: 0;
+       width: 6rem;
+       height: 4.1rem;
+       border-radius: 3rem;
+       background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+       border: none;
+       box-shadow: 0px 10px 10px hsla(0, 36%, 70%, 0.226) ;
+       cursor: pointer;
+}
+footer form button:hover{       
+      background-image: linear-gradient(135deg,hsla(0, 80%, 86%, 0.466),hsla(0, 74%, 74%, 0.575));
+}
+footer form button img{
+       width: 1rem;
+       object-fit: cover;
+       object-position: center;
+      
 }
