@@ -24,8 +24,7 @@ body{
        
        height: auto;                  
 }
-main{
-       max-width: 40rem;
+main{      
        margin: 0 auto;
        background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));  
       
@@ -113,18 +112,59 @@ footer form button img{
       
 }
 @media screen and (min-width:700px) {
+
+       /*/// grid ///////////////////////////////*/
        main{
+              
               display: grid;
-              grid-template-columns: auto auto;
+              grid-template-columns: auto 61rem;
               grid-template-rows: auto auto auto;
        }
        header{
-
+              grid-column: 1 / 2;
+              grid-row: 1 / 2;              
+       }
+       section.content{
+              grid-column: 1 / 2;
+              grid-row: 2 / 3;
+       }     
+       section.hero{
+              grid-column: 2 / 3;
+              grid-row: 1 / 4;
+       }  
+       /*/////////////////////////////////////////*/
+       main{
+              width: auto;
+              height: 80rem;
        }
        section.hero .img-desktop{
               display: block;
+              width: 61rem;
+              height: 80rem;
        }
        section.hero .img-mobile{
               display: none;
+       }
+
+       header .logo{      
+              padding: 8rem 0 8rem 8rem;  
+      }
+      header .logo img{
+             width: 15rem;
+      }
+      section.content h2{
+       width: 40rem;
+       margin: 0;
+       padding: 0 0 0 8rem;
+       text-align: left;
+       font-size: 6.5rem;      
+       letter-spacing: 2rem;
+}
+       section.content p{
+       width: 53rem;
+       margin: 0;
+       padding: 2rem 0 2rem 8rem;       
+       text-align: left;
+       font-size: 1.6rem;       
        }
 }
