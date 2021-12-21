@@ -142,6 +142,7 @@ footer form button img{
        main{
               width: auto;
               height: 80rem;
+              background-image: url(../images/bg-pattern-desktop.svg);
        }
        section.hero .img-desktop{
               display: block;
@@ -160,7 +161,7 @@ footer form button img{
       section.content h2{
        width: 40rem;
        margin: 0;
-       padding: 0 0 0 15%;
+       padding: 0 2rem 0 15%;
        text-align: left;
        font-size: 6rem;      
        letter-spacing: 2rem;
@@ -168,7 +169,7 @@ footer form button img{
        section.content p{
        width: 52rem;
        margin: 0;
-       padding: 2rem 0 0 15%;       
+       padding: 2rem 2rem 0 15%;       
        text-align: left;
        font-size: 1.5rem;       
        }
@@ -178,11 +179,12 @@ footer form button img{
        footer form{
               position: relative;
               width: 52rem;                     
-              padding: 2rem 0 7rem 15%;
+              padding: 2rem 2rem 7rem 15%;
               margin: 0;
        }    
        footer form input{             
-              height: 5.5rem;                 
+              height: 5.5rem;  
+              background-color: hsla(0, 100%, 98%, 0);           
        }       
        footer form button{               
               width: 10rem;
