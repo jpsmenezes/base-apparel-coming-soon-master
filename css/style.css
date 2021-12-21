@@ -25,6 +25,7 @@ body{
        height: auto;                  
 }
 main{      
+       max-width: 1440px;
        margin: 0 auto;
        background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));  
       
@@ -74,13 +75,13 @@ footer{
 }
 footer form{
        position: relative;
-       width: 30rem;        
+       width: 35rem;        
        padding: 3rem 0 7rem;
        margin: 0 auto;
 }
 footer form input{
        width: 100%;
-       height: 4rem;
+       height: 5rem;
        border-radius: 3rem;
        padding: 2rem; 
        border: 1px solid hsla(0, 36%, 70%, 0.356);
@@ -91,11 +92,15 @@ footer form input::placeholder{
        color: hsla(0, 36%, 70%, 0.493);
       
 }
+footer form input:focus{
+       outline: none;
+       border: 2px solid red;
+}
 footer form button{
-       position: absolute;       
+       position: absolute;         
        right: 0;
-       width: 6rem;
-       height: 4.1rem;
+       width: 7.5rem;
+       height: 5.1rem;
        border-radius: 3rem;
        background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
        border: none;
@@ -106,19 +111,20 @@ footer form button:hover{
       background-image: linear-gradient(135deg,hsla(0, 80%, 86%, 0.466),hsla(0, 74%, 74%, 0.575));
 }
 footer form button img{
-       width: 1rem;
-       object-fit: cover;
-       object-position: center;
+       position: relative;
+       top: 2px;
+       left: 2px;
+       width: 1.2rem;
+
       
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:900px) {
 
        /*/// grid ///////////////////////////////*/
-       main{
-              
+       main{              
               display: grid;
-              grid-template-columns: auto 61rem;
-              grid-template-rows: auto auto auto;
+              grid-template-columns: auto 60rem;
+              grid-template-rows: 25rem 30rem 10rem;
        }
        header{
               grid-column: 1 / 2;
@@ -139,32 +145,47 @@ footer form button img{
        }
        section.hero .img-desktop{
               display: block;
-              width: 61rem;
-              height: 80rem;
+              width: 100%;                          
        }
        section.hero .img-mobile{
               display: none;
        }
 
        header .logo{      
-              padding: 8rem 0 8rem 8rem;  
-      }
+              padding: 8rem 0 0 20%;  
+       }
       header .logo img{
              width: 15rem;
-      }
+       }
       section.content h2{
        width: 40rem;
        margin: 0;
-       padding: 0 0 0 8rem;
+       padding: 0 0 0 15%;
        text-align: left;
-       font-size: 6.5rem;      
+       font-size: 6rem;      
        letter-spacing: 2rem;
-}
-       section.content p{
-       width: 53rem;
-       margin: 0;
-       padding: 2rem 0 2rem 8rem;       
-       text-align: left;
-       font-size: 1.6rem;       
        }
+       section.content p{
+       width: 52rem;
+       margin: 0;
+       padding: 2rem 0 0 15%;       
+       text-align: left;
+       font-size: 1.5rem;       
+       }
+       footer{
+              margin-bottom: 0;
+       }
+       footer form{
+              position: relative;
+              width: 52rem;                     
+              padding: 2rem 0 7rem 15%;
+              margin: 0;
+       }    
+       footer form input{             
+              height: 5.5rem;                 
+       }       
+       footer form button{               
+              width: 10rem;
+              height: 5.6rem;              
+       }   
 }
