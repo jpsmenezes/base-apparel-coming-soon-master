@@ -36,20 +36,23 @@ header .logo{
 header .logo img{
        width: 10rem;
 }
-header .hero{
+section.hero{
        width: 100%;
        text-align: center;
 }
-header .hero img{
+section.hero img{
      width: 100%;
      margin-bottom: 3rem;
 }
-section h2 span{
+section.hero .img-desktop{
+       display: none;
+}
+section.content h2 span{
        color: var(--Desaturated-Red);
        display: block;       
        font-weight: 300;
 }
-section h2{
+section.content h2{
        width: 30rem;
        margin: 0 auto;
        padding: 2.5rem;
@@ -58,7 +61,7 @@ section h2{
        text-transform: uppercase;
        letter-spacing: 1rem;
 }
-section p{
+section.content p{
        width: 33rem;
        margin: 0 auto;
        color: var(--Desaturated-Red);
@@ -108,4 +111,20 @@ footer form button img{
        object-fit: cover;
        object-position: center;
       
+}
+@media screen and (min-width:700px) {
+       main{
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-template-rows: auto auto auto;
+       }
+       header{
+
+       }
+       section.hero .img-desktop{
+              display: block;
+       }
+       section.hero .img-mobile{
+              display: none;
+       }
 }
