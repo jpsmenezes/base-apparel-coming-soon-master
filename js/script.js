@@ -12,7 +12,7 @@ let validator = {
             send = false;
             validator.showError(input, check);
         }
-        if (send) {
+        else if (send) {            
             form.submit();
         }
     },
@@ -37,9 +37,9 @@ let validator = {
                     break;
             }
         }
-
+        return true
     },
-    showError:(input, erro) => {
+    showError: (input, erro) => {
         input.style.borderColor = '#ff0000'; // adicionando uma borda vermelha no input com o erro
 
         let errorElement = document.createElement('div'); // criando uma div 
@@ -53,12 +53,12 @@ let validator = {
     },
     clearError: () => {
         let inputs = form.querySelectorAll('input');
-        for(let i = 0; i < inputs.length; i++){
+        for (let i = 0; i < inputs.length; i++) {
             inputs[i].style = '';
         }
 
         let errorElement = document.querySelectorAll('.error');
-        for(let i = 0; i < errorElement.length; i++){
+        for (let i = 0; i < errorElement.length; i++) {
             errorElement[i].remove();
         }
     }
