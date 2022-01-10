@@ -83,17 +83,21 @@ footer form input{
        width: 100%;
        height: 5rem;
        border-radius: 3rem;
-       padding: 2rem; 
+       padding: 2rem 3rem; 
        border: 1px solid hsla(0, 36%, 70%, 0.356);
        background-color: hsl(0, 100%, 98%);
 }
+footer form input.errorInput{
+       background: url(../images/icon-error.svg) no-repeat;
+       background-position: 24rem;       
+}
 footer form input::placeholder{
        font-family: 'Josefin Sans', sans-serif;
-       color: hsla(0, 36%, 70%, 0.493);
-      
+       color: hsla(0, 36%, 70%, 0.493);      
 }
 footer form input:focus{
-       outline: none;      
+       outline: none; 
+       background-color: #fff;     
 }
 footer form button{
        position: absolute;         
@@ -114,6 +118,12 @@ footer form button img{
        top: 2px;
        left: 2px;
        width: 1.2rem;
+}
+.error{
+       position: relative;
+       color: hsl(0, 74%, 74%);
+       font-size: 1.3rem;
+       padding: 1rem 3rem;
 }
 @media screen and (min-width:900px) {
 
@@ -187,4 +197,8 @@ footer form button img{
               width: 10rem;
               height: 5.6rem;              
        }   
+       footer form input.errorInput{
+              background: url(../images/icon-error.svg) no-repeat;
+              background-position: 28rem;       
+       }
 }

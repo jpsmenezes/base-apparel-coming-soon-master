@@ -24,14 +24,14 @@ let validator = {
             switch (rDetails) {
                 case 'required':
                     if (input.value == "") {
-                        return 'Campo Obrigatório';
+                        return 'Input required';
                     }
                     break;
                 case 'email':
                     if (input.value != '') {
                         let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                         if (!regex.test(input.value.toLowerCase())) {
-                            return 'E-mail digitado não é válido!';
+                            return 'Please provid a valid email!';
                         }
                     }
                     break;
@@ -40,8 +40,11 @@ let validator = {
         return true
     },
     showError: (input, erro) => {
-        input.style.borderColor = 'hsl(0, 93%, 68%)'; // adicionando uma borda vermelha no input com o erro
+        input.style.borderColor = 'hsl(0, 74%, 74%)'; // adicionando uma borda vermelha no input com o erro
         input.style.borderWidth = "2.5px"; // largura da borda
+
+        let imgError = document.querySelector('input');
+        imgError.classList.add('errorInput');
 
         let errorElement = document.createElement('div'); // criando uma div 
         errorElement.classList.add('error'); // adiciionando uma class na div
