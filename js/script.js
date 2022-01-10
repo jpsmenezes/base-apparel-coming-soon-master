@@ -12,7 +12,7 @@ let validator = {
             send = false;
             validator.showError(input, check);
         }
-        else if (send) {            
+        if (send) {            
             form.submit();
         }
     },
@@ -40,7 +40,8 @@ let validator = {
         return true
     },
     showError: (input, erro) => {
-        input.style.borderColor = '#ff0000'; // adicionando uma borda vermelha no input com o erro
+        input.style.borderColor = 'hsl(0, 93%, 68%)'; // adicionando uma borda vermelha no input com o erro
+        input.style.borderWidth = "2.5px"; // largura da borda
 
         let errorElement = document.createElement('div'); // criando uma div 
         errorElement.classList.add('error'); // adiciionando uma class na div
