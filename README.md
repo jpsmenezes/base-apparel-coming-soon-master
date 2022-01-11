@@ -31,12 +31,13 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [base-apparel-coming-soon-master]( https://jpsmenezes.github.io/base-apparel-coming-soon-master/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Mobile-first workflow
 
