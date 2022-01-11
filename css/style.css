@@ -128,6 +128,9 @@ footer form button img{
        font-size: 1.3rem;
        padding: 1rem 3rem;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 @media screen and (min-width:900px) {
 
        /*/// grid ///////////////////////////////*/
@@ -192,7 +195,7 @@ footer form button img{
        }
        footer form{
               position: relative;
-              width: 52rem; 
+              width: 55rem; 
               max-width: none;                       
               padding: 2rem 2rem 7rem 15%;
               margin: 0;
@@ -207,6 +210,6 @@ footer form button img{
        }   
        footer form input.errorInput{
               background: url(../images/icon-error.svg) no-repeat;
-              background-position: 27rem;       
+              background-position: 30rem;       
        }
 }
