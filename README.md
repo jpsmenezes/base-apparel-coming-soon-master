@@ -12,7 +12,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Built with](#built-with)
   
 ## Overview
-
+![active-states](https://user-images.githubusercontent.com/92182457/148940146-1cfeef76-94b2-464d-9c57-8d80ec5ebce0.jpg)
 ### The challenge
 
 Users should be able to:
