@@ -43,7 +43,7 @@ let validator = {
         input.style.borderColor = 'hsl(0, 74%, 74%)'; // adicionando uma borda vermelha no input com o erro
         input.style.borderWidth = "2.5px"; // largura da borda
 
-        let imgError = document.querySelector('input');
+        let imgError = input;
         imgError.classList.add('errorInput');
 
         let errorElement = document.createElement('div'); // criando uma div 
